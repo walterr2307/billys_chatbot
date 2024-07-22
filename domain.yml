@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - pedido
+  - sabores_disponiveis
+  - resposta_delivery
+
+responses:
+  utter_greet:
+    - text: "Ola, como posso ajuda - lo?"
+
+  utter_cheer_up:
+    - text: "Olhe isso para melhorar teu dia:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Como posso ajuda - lo?"
+
+  utter_happy:
+    - text: "Bom, continue assim!"
+
+  utter_goodbye:
+    - text: "Tchau!"
+
+  utter_iamabot:
+    - text: "Eu sou o Billy's Bot"
+
+  utter_pedido:
+    - text: "Certo! Temos os seguintes sabores disponíveis: calabresa, frango, portuguesa e carne de sol."
+
+  utter_sabores_disponiveis:
+    - text: "Os sabores foram anotados. Você gostaria de delivery?"
+
+  utter_encerrar_pedido:
+    - text: "Pedido finalizado. Obrigado pela sua escolha!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

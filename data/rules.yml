@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Responder ao pedido inicial
+  steps:
+  - intent: pedido
+  - action: utter_pedido
+
+- rule: Informar os sabores disponíveis quando solicitado
+  steps:
+  - intent: sabores_disponiveis
+  - action: utter_sabores_disponiveis
+
+- rule: Encerrar o pedido após confirmar a escolha do sabor e a preferência de entrega
+  steps:
+  - intent: resposta_delivery
+  - action: utter_encerrar_pedido

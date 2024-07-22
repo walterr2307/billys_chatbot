@@ -1,0 +1,123 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - olá
+    - oi
+    - olá, como vai?
+    - bom dia
+    - boa tarde
+    - opa
+    - oi pessoal
+    - vamos lá
+    - oi cara
+    - bom dia
+    - boa tarde
+    - boa tarde
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - adeus
+    - até logo
+    - boa noite
+    - até mais tarde
+    - vejo você por aí
+    - tchau tchau
+    - até mais
+
+- intent: affirm
+  examples: |
+    - sim
+    - claro
+    - exato
+    - com certeza
+    - parece bom
+    - correto
+
+- intent: deny
+  examples: |
+    - não
+    - nunca
+    - não acho que sim
+    - não gosto disso
+    - de jeito nenhum
+    - realmente não
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - ótimo
+    - incrível
+    - me sentindo como um rei
+    - maravilhoso
+    - estou me sentindo muito bem
+    - estou ótimo
+    - estou incrível
+    - vou salvar o mundo
+    - super animado
+    - extremamente bom
+    - tão perfeito
+    - tão bom
+    - tão perfeito
+
+- intent: mood_unhappy
+  examples: |
+    - meu dia foi horrível
+    - estou triste
+    - não estou me sentindo bem
+    - estou decepcionado
+    - muito triste
+    - estou muito triste
+    - triste
+    - muito triste
+    - infeliz
+    - não bom
+    - não muito bom
+    - extremamente triste
+    - tão triste
+    - tão triste
+
+- intent: bot_challenge
+  examples: |
+    - você é um bot?
+    - você é humano?
+    - estou falando com um bot?
+    - estou falando com um humano?
+
+- intent: pedido
+  examples: |
+    - Quero pedir uma pizza
+    - Gostaria de fazer um pedido
+    - Uma pizza, por favor
+    - Poderia me trazer um pedido
+    - Quero pizzas, por gentileza
+ 
+- intent: sabores_disponiveis
+  examples: |
+    - quero uma pizza de calabresa.
+    - gostaria de pedir uma pizza com frango.
+    - estou interessado na pizza de carne de sol.
+    - me diga os sabores de pizza que vocês têm.
+    - você me traz uma portuguesa
+    - calabresa e frango
+    - estou curioso para experimentar a pizza de carne de sol.
+
+- intent: resposta_delivery
+  examples: |
+    - sim, quero delivery
+    - gostaria de pedir delivery
+    - sim, entrega em casa
+    - por favor, delivery
+    - quero que entreguem em casa
+    - sim, por favor
+    - entrega aqui
+    - sim, entrega
+    - não, vou buscar
+    - não, retirada no local
+    - não preciso de delivery
+    - vou buscar pessoalmente
+    - não, eu pego
+    - não, retirar no balcão
